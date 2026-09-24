@@ -22,3 +22,6 @@ dt {
     color: #1976d2; /* c#1976d2 */
 font-weight: bold;
 }
+address {
+    font-style: normal;
+}
