@@ -73,9 +73,14 @@ main {
     width: 33%; 
  }
 h1 {
+    color: #fff;
     letter-spacing: 0.25em;
+    text-decoration: none;
     margin-bottom: 0; /* mb0 */
     margin-top: 0; /* mt0 */   
+}
+header h1 a:hover {
+    text-decoration: none;
 }
 h1,
 h2,
