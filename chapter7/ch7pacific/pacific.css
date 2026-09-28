@@ -134,4 +134,21 @@ background-image: url(images/yurt.jpg);
 #trailhero {
 background-image: url(images/trail.jpg); 
 }
+
+.columns section {
+  float: left;
+  width: 30%;
+  margin-right: 3%;
+}
+
+.columns section:last-child {
+  margin-right: 0;
+}
+
+.columns::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
  
