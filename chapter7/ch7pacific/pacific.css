@@ -114,8 +114,8 @@ footer {
     color: #5c7fa3; 
     font-weight: bold;
 }
-#homehero 
-#yurthero
+#homehero, 
+#yurthero,
 #trailhero {
     background-repeat: no-repeat;
     background-size: cover;
@@ -132,6 +132,6 @@ background-image: url(images/yurt.jpg);
 }
 
 #trailhero {
-background-image: url(images/trail.jpg); /* bgimg:url(image/trail.jpg) */
+background-image: url(images/trail.jpg); 
 }
  
