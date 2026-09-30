@@ -5,7 +5,11 @@ body {
 }
 header {
     background-color: #002171; /* bgc#002171 */
+    background-image: url("images/sunset.jpg");
+    background-position: right;
+    background-repeat: no-repeat;
     color: #fff; /* c#fff */
+    padding: 15px;
 }     
 nav {
     background-color: #bbdefb; /* bgc#bbdefb */
@@ -16,6 +20,7 @@ nav a {
 }
 h1,h2,h3 {
     margin-bottom: 0; /* mb0 */
+    margin-top: 0;
 }
 footer {
   font-family: Georgia, 'Times New Roman', Times, serif; /*fft */
