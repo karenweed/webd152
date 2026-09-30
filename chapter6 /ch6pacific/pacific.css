@@ -86,13 +86,21 @@ footer {
 
 #homehero {
     background-image: url(images/coast2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
 }
 
 #yurthero {
     background-image: url(images/yurt.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
 }
 
 #trailhero {
     background-image: url(images/trail.jpg); /* bgimg:url(image/trail.jpg) */
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
 }
-
