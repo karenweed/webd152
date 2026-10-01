@@ -36,18 +36,25 @@ header a:hover {
     color: #90c7e3;
 }
 nav {
-    float: left;
+    text-align: center;
     font-size: 120%;
     font-weight: bold; /* fwb */
-    padding: 1.5em; 
-    width: 190px;
+    padding: 0;
 }
 nav ul{
     list-style-type: none; 
     margin: 0;
     padding-left: 0;
 }
+nav li {
+    border-bottom: 1px solid #5c7fa3;
+    padding: 0.75em;
+}
+nav li:last-child {
+    border-bottom: 0;
+}
 nav a {
+    display: block;
     text-decoration: none; /* txd */
 }
 nav a:link {
@@ -61,12 +68,12 @@ nav a:hover {
 }
 main {
     background-color: #fff; 
-    margin-left: 190px; 
+    margin-left: 0;
     padding: 1px 20px 20px 30px;
     overflow: auto;  
  }
  section { 
-    margin-left: 190px;
+    margin-left: 0;
     float: left;
     padding-left: 2em;
     padding-right: 2em;
@@ -109,13 +116,14 @@ footer {
     color: #5c7fa3; 
     font-weight: bold;
 }
-#homehero 
-#yurthero
+#homehero,
+#yurthero,
 #trailhero {
     background-repeat: no-repeat;
     background-size: cover;
     height: 18.75rem;
-    margin-left: 190px;  
+    margin-left: 0;
+    background-position: center;
 }
 
 #homehero {
