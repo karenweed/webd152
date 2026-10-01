@@ -6,6 +6,7 @@ body {
   background-color: #eaeaea;
   color: #555;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  margin: 0;
 }
 
 #wrapper {
@@ -15,7 +16,6 @@ body {
   min-width: 960px;
   max-width: 2048px;
   width: 80%;
-  overflow: hidden;
 }
 
 header {
@@ -39,17 +39,26 @@ header a:hover {
 }
 
 nav {
-  float: left;
-  font-size: 120%;
-  font-weight: bold;
-  padding: 1.5em;
-  width: 190px;
+  float: none;
+  width: 100%;
+  text-align: center;
+  padding: 0;
+  background-color: #fff;
 }
 
 nav ul {
   list-style-type: none;
   margin: 0;
-  padding-left: 0;
+  padding: 1em 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+
+nav li {
+  font-size: 120%;
+  font-weight: bold;
 }
 
 nav a {
@@ -70,7 +79,7 @@ nav a:hover {
 
 main {
   background-color: #fff;
-  margin-left: 190px;
+  margin: 0;
   padding: 1px 20px 20px 30px;
   overflow: auto;
 }
@@ -100,7 +109,10 @@ h2 {
   text-shadow: 1px 1px 1px #404040;
 }
 
-h3,
+h3 {
+  color: #003;
+}
+
 dt {
   color: #003;
 }
@@ -129,7 +141,7 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   height: 18.75rem;
-  margin-left: 190px;
+  margin: 0;
 }
 
 #homehero {
@@ -137,9 +149,9 @@ footer {
 }
 
 #yurthero {
-  background-image: url("images/yurt.jpg");
+  background-image: url("images/yurthero.jpg");
 }
 
 #trailhero {
-  background-image: url("images/trail.jpg");
+  background-image: url("images/trailhero.jpg");
 }
