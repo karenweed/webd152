@@ -44,26 +44,38 @@ header a:hover {
 nav {
     font-size: 120%;
     font-weight: bold;
-    padding: 1.5em;
+    padding: 0;
 }
 nav ul {
     list-style-type: none;
     margin: 0;
-    padding-left: 0;
+    padding: 0;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: stretch;
     max-width: 100%;
     box-sizing: border-box;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 nav li {
-    border-bottom: 1px solid #003;
-    padding: 0.5rem 0;
+    border-right: 1px solid #003;
+    padding: 0.5rem 1rem;
     max-width: 100%;
     box-sizing: border-box;
+    text-align: center;
+    flex: 1;
 }
+
+nav li:last-child {
+    border-right: none;
+}
+
+nav li:first-child {
+    border-left: 1px solid #003;
+}
+
 nav a {
     text-decoration: none;
 }
@@ -181,17 +193,26 @@ footer {
     footer {
         padding: 1em;
     }
+    nav ul {
+        flex-direction: column;
+    }
+    nav li {
+        border-right: none;
+        border-bottom: 1px solid #003;
+        border-left: none;
+    }
+    nav li:last-child {
+        border-bottom: none;
+    }
+    nav li:first-child {
+        border-left: none;
+    }
 }
 @media (min-width: 37.5rem) {
     nav ul {
         flex-direction: row;
         justify-content: center;
         align-items: center;
-    }
-    nav li {
-        border-bottom: none;
-        padding: 0 1rem;
-        max-width: none;
     }
     .card-row {
         flex-direction: row;
@@ -203,5 +224,5 @@ footer {
         max-width: 100%;
     }
 }
-     
+      
   
