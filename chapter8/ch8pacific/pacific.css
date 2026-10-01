@@ -94,12 +94,14 @@ nav a:hover {
 
 main {
     background-color: #fff;
-    padding: 0.0625rem 1.25rem 1.25rem 1.875rem;
+    padding: 1rem;
 }
 
 section {
-    padding: 1.5rem;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
 }
+
 h1,
 h2,
 h3,
@@ -114,6 +116,7 @@ h1 {
 h2 {
     color: #39c;
     text-shadow: 1px 1px 1px #ccc;
+    margin-top: 0;
 }
 h3 {
     color: #003;
@@ -163,7 +166,7 @@ footer {
 .card-row {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1.5rem;
     max-width: 100%;
     box-sizing: border-box;
 }
@@ -171,9 +174,8 @@ footer {
 .card-row section {
     max-width: 100%;
     box-sizing: border-box;
-    background-color: #f9f9f9;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 0;
+    padding: 1rem;
 }
 
 @media (max-width: 32.5rem) {
@@ -220,7 +222,7 @@ footer {
     }
     .card-row {
         flex-direction: row;
-        gap: 2rem;
+        gap: 1.5rem;
     }
     .card-row section { 
         flex: 1 1 0;
