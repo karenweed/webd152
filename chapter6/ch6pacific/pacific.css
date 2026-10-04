@@ -172,3 +172,59 @@ footer {
     display: block;
     clear: both;
 }
+
+@media (max-width: 48rem) {
+    #wrapper {
+        min-width: 0;
+        width: 100%;
+    }
+
+    header {
+        height: auto;
+        padding: 1rem;
+        background-position: center right;
+    }
+
+    nav {
+        float: none;
+        width: auto;
+        min-height: 0;
+        padding: 0;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav li {
+        border-bottom: 1px solid #5c7fa3;
+        text-align: center;
+        padding: 0.75rem 1rem;
+    }
+
+    nav li:last-child {
+        border-bottom: none;
+    }
+
+    main {
+        margin-left: 0;
+        padding: 1rem;
+    }
+
+    #homehero,
+    #yurthero,
+    #trailhero {
+        margin-left: 0;
+        height: 14rem;
+    }
+
+    .columns section,
+    section {
+        float: none;
+        width: auto;
+        margin-right: 0;
+    }
+}
