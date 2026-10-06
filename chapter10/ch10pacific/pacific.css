@@ -365,5 +365,10 @@ img {
 }
 #reservations-hero {
     width: 100%;
-    overflow: hidden;
+}
+#reservations-hero img {
+    width: 100% !important;
+    max-width: none !important;
+    height: auto;
+    margin: 0 auto;
 }
