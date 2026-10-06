@@ -24,6 +24,7 @@ body {
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 #wrapper {
+    background-color: #fff; 
     margin: auto;
     max-width: 75rem;
     width: 80%;
