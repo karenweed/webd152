@@ -81,7 +81,8 @@ nav a:hover {
 }
 
 main {
-    background-color: #fff;
+    background-image: linear-gradient(to bottom, #fff, #90c7e3);
+    background-repeat: no-repeat;
     padding: 0.0625rem 1.25rem 1.25rem 1.875rem;
 }
 
@@ -210,10 +211,10 @@ form {
     box-sizing: border-box; /* bxz: border-box */
     margin: 0 auto; /* m: 0 auto */
     padding: 2em 1em; /* p: 2em 1em */
-    background-color: #f9f9f9; /* bg: #f9f9f9 */
+    background-color: #fff; /* bg: #fff */
+    border: 2px solid #fff; /* border: 2px solid #fff */
     border-radius: 0.5rem; /* br: 0.5rem */
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5); /* bs: 0 2 8px rgba(0, 0, 0, 0.5) */
-    border: 2px solid #39c; /* border: 2px solid #39c */
 }
 label {
     font-weight: 600; /* fw: 600 */
@@ -315,8 +316,8 @@ input[type="submit"]:focus {
     form {
         max-width: 100%; /* overide base for mobile */
         padding: 1em; /* reduce padding for small screens */
-        background-color: #fff !important; /* set background color for form */
-        border: 2px solid #39c; /* border: 2px solid #39c */
+        background-color: #fff; /* bg: #fff */
+        border: 2px solid #fff; /* border: 2px solid #fff */
     }
 
     form label,
