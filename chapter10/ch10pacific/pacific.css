@@ -246,7 +246,6 @@ input[type="submit"]:focus {
 }
 @media (max-width: 32.5rem) { 
     body {
-        background-image: none; /* bg: none */
         border: none; /* bd: none */
         box-shadow: none; /* bs: none */
         margin: 0; /* m: 0 */
