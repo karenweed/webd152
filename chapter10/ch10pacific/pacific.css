@@ -130,7 +130,8 @@ footer {
 
 #homehero,
 #yurthero,
-#trailhero {
+#trailhero,
+#reservationshero {
     background-repeat: no-repeat; /* bg-repeat: no-repeat */
     background-size: cover; /* bg-size: cover */
     height: 18.75rem; /* h: 18.75rem */
@@ -148,6 +149,11 @@ footer {
 #trailhero {
     background-image: url(images/trail.jpg); /* bgimg:url(images/trail.jpg) */
 }
+
+#reservationshero {
+    background-image: url(images/reservations.jpg); /* bgimg: url(images/reservations.jpg) */
+}
+
 .card-row {
     display:flex;     /* d:flex */
     flex-direction:column;  /* fd:column */
@@ -207,6 +213,7 @@ form {
     background-color: #f9f9f9; /* bg: #f9f9f9 */
     border-radius: 0.5rem; /* br: 0.5rem */
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5); /* bs: 0 2 8px rgba(0, 0, 0, 0.5) */
+    border: 2px solid #39c; /* border: 2px solid #39c */
 }
 label {
     font-weight: 600; /* fw: 600 */
@@ -309,6 +316,7 @@ input[type="submit"]:focus {
         max-width: 100%; /* overide base for mobile */
         padding: 1em; /* reduce padding for small screens */
         background-color: #fff !important; /* set background color for form */
+        border: 2px solid #39c; /* border: 2px solid #39c */
     }
 
     form label,
