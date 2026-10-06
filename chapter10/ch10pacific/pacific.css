@@ -4,6 +4,11 @@
 html {
     scroll-behavior: smooth;
 }
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
 body {
     background-image: linear-gradient(to bottom, #fff, #90c7e3);
     background-repeat: no-repeat;
