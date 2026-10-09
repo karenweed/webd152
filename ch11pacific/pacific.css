@@ -264,9 +264,9 @@ input[type="submit"]:focus {
 }
 
 .content-row video {
-  flex: 1 1 22rem;
+  flex: 1 1 28rem;
   width: 100%;
-  max-width: 40rem;
+  max-width: 60rem;
   height: auto;
   margin: 0;
   border-radius: 0.5rem;
@@ -275,7 +275,7 @@ input[type="submit"]:focus {
 }
 
 .text-content {
-  flex: 1 1 22rem;
+  flex: 1 1 20rem;
   min-width: 250px;
 }
 
