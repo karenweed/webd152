@@ -253,51 +253,61 @@ input[type="submit"]:focus {
   margin: 1em 0;
 }
 
-/* Main content row */
+/* Main content row: text on one side, larger video on the other, vertically centered */
 .content-row {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 2rem;
 }
 
 .content-row video {
-  flex: 0 0 320px;
-  margin: 2em;
-  max-width: 100%;
+  flex: 1 1 22rem;
+  width: 100%;
+  max-width: 40rem;
+  height: auto;
+  margin: 0;
   border-radius: 0.5rem;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .text-content {
-  flex: 1;
+  flex: 1 1 22rem;
   min-width: 250px;
 }
 
 /* Gallery */
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1rem;
   margin: 2em 0;
+}
+
+.gallery h2 {
+  grid-column: 1 / -1;
+  margin-bottom: 0;
 }
 
 /* Gallery Image Container (regular state) */
 .gallery-image {
   position: relative;
   overflow: hidden;
+  margin: 0;
   border-radius: 0.5em;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
   background: #fff;
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* smooth in & out */
 }
 
-/* Gallery Image (regular state) */
+/* Gallery Image (regular state): every image same size, cropped to fit */
 .gallery-image img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  aspect-ratio: 4 / 3;
   display: block;
   object-fit: cover;
   transition: transform 0.3s ease; /* smooth in & out */
