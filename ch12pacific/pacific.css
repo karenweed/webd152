@@ -419,3 +419,256 @@ input[type="submit"]:focus-visible {
     min-width: 0;
   }
 }
+
+:root {
+  color-scheme: light;
+  --navy: #123446;
+  --blue: #287b91;
+  --sea-glass: #e6f1ef;
+  --sand: #f6f4ed;
+  --ink: #34434a;
+}
+
+body {
+  margin: 0;
+  border: 0;
+  background: var(--sand);
+  color: var(--ink);
+  line-height: 1.7;
+}
+
+#wrapper {
+  width: min(92%, 78rem);
+  margin: 2rem auto;
+  overflow: hidden;
+  border-radius: 1.25rem;
+  background: #fff;
+  box-shadow: 0 1.25rem 4rem rgb(18 52 70 / 12%);
+}
+
+header {
+  display: grid;
+  min-height: 7rem;
+  place-items: center;
+  padding: 1.5rem;
+  background-color: var(--navy);
+  background-image: linear-gradient(90deg, rgb(18 52 70 / 78%), rgb(18 52 70 / 30%)), url("images/sunset.jpg");
+  background-size: cover;
+  background-position: center 54%;
+}
+
+header h1 {
+  font-size: clamp(1.35rem, 3vw, 2rem);
+  letter-spacing: 0.12em;
+}
+
+nav {
+  padding: 0.75rem 1rem;
+  background: #fff;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.25rem;
+}
+
+nav li {
+  border: 0;
+  padding: 0;
+}
+
+nav a {
+  display: block;
+  padding: 0.55rem 1rem;
+  border-radius: 999px;
+  font-size: 1rem;
+}
+
+nav a:link,
+nav a:visited {
+  color: var(--navy);
+}
+
+nav a:hover,
+nav a:focus-visible {
+  background: var(--sea-glass);
+  color: var(--navy);
+}
+
+main {
+  padding: clamp(1.25rem, 4vw, 3rem);
+}
+
+h2 {
+  color: var(--navy);
+  text-shadow: none;
+  line-height: 1.2;
+}
+
+h3,
+dt {
+  color: var(--blue);
+}
+
+p {
+  max-width: 72ch;
+}
+
+#homehero,
+#yurthero,
+#trailhero,
+#abouthero {
+  height: clamp(15rem, 35vw, 25rem);
+}
+
+#homehero,
+#yurthero,
+#trailhero,
+#abouthero,
+#reservations-hero img {
+  border-radius: 0.9rem;
+}
+
+.card-row {
+  gap: 1.25rem;
+  margin: 1.5rem 0;
+}
+
+.card-row section {
+  padding: 1.25rem;
+  border: 1px solid #e3eceb;
+  border-radius: 0.85rem;
+  background: linear-gradient(145deg, #fff, #f4f8f6);
+}
+
+.card-row h2,
+.card-row h3 {
+  margin-top: 0;
+}
+
+.gallery-image {
+  border-radius: 0.85rem;
+  box-shadow: 0 0.5rem 1.5rem rgb(18 52 70 / 10%);
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.gallery-image:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0.8rem 1.8rem rgb(18 52 70 / 16%);
+}
+
+table {
+  overflow: hidden;
+  border-color: #d6e4e2;
+  border-radius: 0.6rem;
+}
+
+th {
+  background: var(--navy);
+}
+
+td,
+th {
+  border-color: #d6e4e2;
+  padding: 0.75rem;
+}
+
+tr:nth-of-type(odd) {
+  background-color: #f1f6f4;
+}
+
+form {
+  border: 1px solid #e3eceb;
+  background: #f7faf9;
+  box-shadow: 0 0.75rem 2rem rgb(18 52 70 / 8%);
+}
+
+form input:not([type="submit"]),
+form textarea {
+  border: 1px solid #c9d8d8;
+  border-radius: 0.4rem;
+}
+
+input[type="submit"] {
+  border-radius: 999px;
+  background: var(--navy);
+  font-weight: bold;
+}
+
+footer {
+  background: #f4f7f5;
+  color: #53646a;
+}
+
+footer a,
+main a {
+  color: var(--blue);
+  font-weight: 600;
+}
+
+#abouthero {
+  background: url("images/coast2.jpg") center / cover no-repeat;
+}
+
+.about-intro {
+  max-width: 52rem;
+  margin: 0 auto 2rem;
+  text-align: center;
+}
+
+.about-intro h2 {
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+}
+
+.about-intro p {
+  margin-inline: auto;
+  font-size: 1.1rem;
+}
+
+.about-cards section {
+  padding: 1.5rem;
+}
+
+.about-cards a {
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 32.5rem) {
+  #wrapper {
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+  }
+
+  header {
+    min-height: 6rem;
+  }
+
+  nav a {
+    padding: 0.45rem 0.7rem;
+    font-size: 0.95rem;
+  }
+
+  main {
+    padding: 1.25rem;
+  }
+
+  #homehero,
+  #yurthero,
+  #trailhero,
+  #abouthero {
+    border-radius: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
