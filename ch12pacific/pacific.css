@@ -288,6 +288,11 @@ form input[type="submit"] {
   align-self: center;
 }
 
+/* Add space between reservations form and the "Call us..." line */
+form + p.center {
+  margin-top: 1.5rem;
+}
+
 /* Tighten spacing around centered intro text on desktop */
 @media (min-width: 769px) {
   main > .center {
