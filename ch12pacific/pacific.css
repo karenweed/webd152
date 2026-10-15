@@ -25,6 +25,35 @@ img {
   border-radius: 0.25rem;
 }
 
+/* Centered text utility */
+.center {
+  text-align: center;
+}
+
+/* Desktop spacing polish around reservations content */
+main > .center {
+  max-width: 48rem;
+  margin: 0 auto 1.25rem auto;
+}
+
+main > .center h2 {
+  margin-bottom: 0.25rem;
+}
+
+main > .center h3 {
+  margin: 0.25rem 0 0.5rem 0;
+}
+
+main > .center p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+/* Center submit button inside the form */
+form input[type="submit"] {
+  align-self: center;
+}
+
 /* Small-screen tuning */
 @media (max-width: 768px) {
   #abouthero,
