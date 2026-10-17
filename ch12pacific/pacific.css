@@ -23,9 +23,12 @@ body {
 
 header {
   background-color: #003;
-  background-image: url("images/sunset.jpg");
+  background-image:
+    linear-gradient(to right, #003 0%, rgba(0, 0, 51, 0.85) 30%, rgba(0, 0, 51, 0) 70%),
+    url("images/sunset.jpg");
   background-position: right;
   background-repeat: no-repeat;
+  background-size: auto 100%;
   color: #fff;
   height: auto;
   padding: 1rem;
