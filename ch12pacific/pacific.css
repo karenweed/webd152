@@ -125,6 +125,7 @@ footer {
   font-weight: bold;
 }
 
+#abouthero,
 #homehero,
 #yurthero,
 #trailhero {
@@ -146,6 +147,10 @@ footer {
   background-image: url("images/trail.jpg");
 }
 
+#abouthero {
+  background-image: url("images/coasthero.jpg");
+}
+
 .card-row {
   display: flex;
   flex-direction: column;
@@ -157,6 +162,36 @@ footer {
 .card-row section {
   max-width: 100%;
   overflow-wrap: break-word;
+}
+
+.about-story {
+  display: grid;
+  gap: 1.5rem;
+  align-items: start;
+  margin-bottom: 2rem;
+}
+
+.about-story-image {
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
+}
+
+.about-story-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  aspect-ratio: 16 / 10;
+}
+
+.about-story-text {
+  min-width: 0;
+}
+
+.about-story-text p {
+  line-height: 1.75;
+  margin: 0 0 1rem;
 }
 
 .main-content .text-content > h2,
@@ -270,12 +305,10 @@ input[type="submit"] {
 
 /* --- Safe fixes applied after restore --- */
 
-/* Center helper used by reservations page text blocks */
 .center {
   text-align: center;
 }
 
-/* Keep reservations hero image inside its container */
 #reservations-hero img {
   width: 100%;
   height: auto;
@@ -283,17 +316,14 @@ input[type="submit"] {
   object-fit: cover;
 }
 
-/* Center submit button within the form */
 form input[type="submit"] {
   align-self: center;
 }
 
-/* Add space between reservations form and the "Call us..." line */
 form + p.center {
   margin-top: 1.5rem;
 }
 
-/* Tighten spacing around centered intro text on desktop */
 @media (min-width: 769px) {
   main > .center {
     max-width: 48rem;
@@ -314,9 +344,6 @@ form + p.center {
   }
 }
 
-/* --- Responsive fixes: home video, About Us images, Yurts table --- */
-
-/* Home page: video scales down to fit the screen (overrides width/height attributes) */
 .content-row {
   display: flex;
   flex-direction: column;
@@ -336,7 +363,6 @@ form + p.center {
   overflow-wrap: break-word;
 }
 
-/* About Us page: images scale to their card instead of overflowing */
 .about-card-img {
   display: block;
   width: 100%;
@@ -346,7 +372,6 @@ form + p.center {
   object-fit: cover;
 }
 
-/* Yurts page: package table fits small screens by stacking each row */
 #special {
   max-width: 100%;
 }
@@ -365,7 +390,6 @@ form + p.center {
     width: 100%;
   }
 
-  /* Hide header row visually but keep it available to screen readers */
   #special thead {
     position: absolute;
     width: 1px;
@@ -409,7 +433,6 @@ form + p.center {
   }
 }
 
-/* Larger screens: video beside text, About cards in a row */
 @media (min-width: 48rem) {
   .content-row {
     flex-direction: row;
@@ -423,6 +446,12 @@ form + p.center {
 
   .content-row .text-content {
     flex: 1 1 50%;
+  }
+
+  .about-story {
+    grid-template-columns: 1.1fr 1fr;
+    gap: 2rem;
+    align-items: center;
   }
 
   .about-cards {
