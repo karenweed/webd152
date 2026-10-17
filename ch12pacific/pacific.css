@@ -313,3 +313,124 @@ form + p.center {
     margin-bottom: 1rem;
   }
 }
+
+/* --- Responsive fixes: home video, About Us images, Yurts table --- */
+
+/* Home page: video scales down to fit the screen (overrides width/height attributes) */
+.content-row {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.content-row video {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+}
+
+.content-row .text-content {
+  min-width: 0;
+  overflow-wrap: break-word;
+}
+
+/* About Us page: images scale to their card instead of overflowing */
+.about-card-img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+/* Yurts page: package table fits small screens by stacking each row */
+#special {
+  max-width: 100%;
+}
+
+#special table {
+  table-layout: fixed;
+  overflow-wrap: break-word;
+}
+
+@media (max-width: 40rem) {
+  #special table,
+  #special tbody,
+  #special tr,
+  #special td {
+    display: block;
+    width: 100%;
+  }
+
+  /* Hide header row visually but keep it available to screen readers */
+  #special thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+
+  #special tr {
+    border-bottom: 0.125rem solid #1976d2;
+  }
+
+  #special td {
+    border: 0;
+    text-align: left;
+  }
+
+  #special td::before {
+    display: block;
+    color: #003;
+    font-weight: bold;
+  }
+
+  #special td.package::before {
+    content: "Package Name";
+  }
+
+  #special td.description::before {
+    content: "Description";
+  }
+
+  #special td.nights::before {
+    content: "Nights";
+  }
+
+  #special td.cost::before {
+    content: "Cost";
+  }
+}
+
+/* Larger screens: video beside text, About cards in a row */
+@media (min-width: 48rem) {
+  .content-row {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .content-row video {
+    flex: 1 1 50%;
+    min-width: 0;
+  }
+
+  .content-row .text-content {
+    flex: 1 1 50%;
+  }
+
+  .about-cards {
+    flex-direction: row;
+  }
+
+  .about-cards section {
+    flex: 1 1 0;
+    min-width: 0;
+  }
+}
